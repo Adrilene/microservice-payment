@@ -1,0 +1,29 @@
+{
+  "name": "microservice-payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrilene/microservice-payment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adrilene/microservice-payment/issues"
+  },
+  "homepage": "https://github.com/Adrilene/microservice-payment#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.2.3",
+    "express": "^4.17.1",
+    "mercadopago": "^1.5.2",
+    "paypal-rest-sdk": "^1.8.1",
+    "stripe": "^8.128.0"
+  }
+}
