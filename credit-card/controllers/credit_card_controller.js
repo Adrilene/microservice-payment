@@ -1,7 +1,7 @@
 const { response } = require('express');
 
 module.exports = () => {
-    var payment = require('../services/payment_services');
+    var payment = require('../services/credit_card_services');
     const controller = {};
 
     controller.payment_proc = (req, res) => {

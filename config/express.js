@@ -10,6 +10,6 @@ module.exports = () => {
 
     // MIDDLEWARES
     app.use(bodyParser.json());
-    require('../payment/routes/payment_routes')(app);
+    require('../credit-card/routes/credit_card_routes')(app);
     return app;
 };
