@@ -67,7 +67,7 @@
                     <span class="title">Data do Documento</span>
                     <br/>
                     <p class="content center">
-                        <?= data.date ?>
+                        <%= data.date %>
                     </p>
                 </td>
                 <td width="17%" colspan="2">
@@ -88,7 +88,9 @@
                 <td>
                     <span class="title">Data Processamento</span>
                     <br/>
-                    <p class="content center">01/07/2015</p>
+                    <p class="content center">
+                        <%= data.date %>
+                    </p>
                 </td>
                 <td width="30%">
                     <span class="title">Carteira/Nosso Número</span>
@@ -122,13 +124,17 @@
                 <td>
                     <span class="title">Valor</span>
                     <br/>
-                    <p class="content center">10,00</p>
+                    <p class="content center">
+                        <%= data.value %>
+                    </p>
                 </td>
                 <td width="30%">
                     <span class="title">(=) Valor do Documento</span>
                     <br/>
                     <br/>
-                    <p class="content right">10,00</p>
+                    <p class="content right">
+                        <%= data.value %>
+                    </p>
                 </td>
             </tr>
             <tr>
@@ -161,11 +167,11 @@
                 <td colspan="7">
                     <table border="0" style="border:none">
                         <tr>
-                            <td width="60%"><span class="text"><b>Nome do Pagador: </b> Pagador ABC</span></td>
-                            <td><span class="text"><b>CNPJ/CPF: </b> 123.121.001-00</span></td>
+                            <td width="60%"><span class="text"><b>Nome do Pagador: </b> <%= data.name %> </span></td>
+                            <td><span class="text"><b>CNPJ/CPF: </b> <%= data.cpf %> </span></td>
                         </tr>
                         <tr>
-                            <td><span class="text"><b>Endereço: </b> Avenida Brasil 1234 - Jardim Brasil - São Paulo - SP - 9999999-999</span></td>
+                            <td><span class="text"><b>Endereço: </b> <%= data.address %> </span></td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
@@ -201,7 +207,9 @@
                     <span class="title">Data de Vencimento</span>
                     <br/>
                     <br/>
-                    <p class="content right text" style="font-weight:bold;">01/01/2016</p>
+                    <p class="content right text" style="font-weight:bold;">
+                        <%= data.due_date %>
+                    </p>
                 </td>
             </tr>
             <tr>
@@ -229,7 +237,9 @@
                 <td width="15%">
                     <span class="title">Data do Documento</span>
                     <br/>
-                    <p class="content center">01/07/2015</p>
+                    <p class="content center">
+                        <%= data.date %>
+                    </p>
                 </td>
                 <td width="17%" colspan="2">
                     <span class="title">Num. do Documento</span>
@@ -249,7 +259,9 @@
                 <td>
                     <span class="title">Data Processamento</span>
                     <br/>
-                    <p class="content center">01/07/2015</p>
+                    <p class="content center">
+                        <%= data.date %>
+                    </p>
                 </td>
                 <td width="30%">
                     <span class="title">Carteira/Nosso Número</span>
@@ -283,13 +295,17 @@
                 <td>
                     <span class="title">Valor</span>
                     <br/>
-                    <p class="content center">10,00</p>
+                    <p class="content center">
+                        <%= data.value %>
+                    </p>
                 </td>
                 <td width="30%">
                     <span class="title">(=) Valor do Documento</span>
                     <br/>
                     <br/>
-                    <p class="content right">10,00</p>
+                    <p class="content right">
+                        <%= data.value %>
+                    </p>
                 </td>
             </tr>
             <tr>
@@ -322,11 +338,11 @@
                 <td colspan="7">
                     <table border="0" style="border:none">
                         <tr>
-                            <td width="60%"><span class="text"><b>Nome do Pagador: </b> Pagador ABC</span></td>
-                            <td><span class="text"><b>CNPJ/CPF: </b> 123.121.001-00</span></td>
+                            <td width="60%"><span class="text"><b>Nome do Pagador: </b>  <%= data.name %> </span></td>
+                            <td><span class="text"><b>CNPJ/CPF: </b> <%= data.cpf %> </span></td>
                         </tr>
                         <tr>
-                            <td><span class="text"><b>Endereço: </b> Avenida Brasil 1234 - Jardim Brasil - São Paulo - SP - 9999999-999</span></td>
+                            <td><span class="text"><b>Endereço: </b>  <%= data.address %> </span></td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
