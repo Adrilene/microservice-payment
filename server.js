@@ -14,9 +14,11 @@ app.use(bodyParser.json());
 app.get('/payment', function(req, res) {
 
     var today = new Date();
+    console.log(today.getMonth())
+    var generate_due = require('./util/generate_due')
     var data = {
-        due_date: `${today.getDate()+5}/${today.getMonth()}/${today.getFullYear()}`,
-        date: `${today.getDate()}/${today.getMonth()}/${today.getFullYear()}`,
+        due_date: generate_due.generate_due_date(today),
+        date: `${today.getDate()}/${today.getMonth()+1}/${today.getFullYear()}`,
         value: `R$ ${parseFloat(req.query.value).toFixed(2)}`,
         name: req.query.name,
         cpf: req.query.cpf,
