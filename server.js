@@ -40,6 +40,6 @@ app.get('/payment', function(req, res) {
 });
 
 
-app.listen(4243, () => {
-    console.log(`Servidor rodando na porta 4243`)
+app.listen(4001, () => {
+    console.log(`Servidor rodando na porta 4001`)
 });
